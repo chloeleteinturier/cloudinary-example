@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form action="/gif" method="POST" enctype="multipart/form-data">
+  <input type="text" placeholder="title" name="title">
+  <input type="text" placeholder="description" name="description">
+  <input type="file" name="photo" />
+  <button type="submit">New GIF</button>
+</form>
+
+<section>
+  {{#each gifs}}
+
+    <h2>{{this.title}}</h2>
+    <p>{{this.description}}</p>
+    <img src="{{this.image_url}}" alt="">
+
+  {{/each}}
+</section>
