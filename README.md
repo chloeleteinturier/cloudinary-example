@@ -1,4 +1,4 @@
-# cloudinary-example-starter-code
+# cloudinary-example
 
 ### npm install cloudinary multer-storage-cloudinary multer
 
@@ -47,4 +47,4 @@ router.post('/', parser.single('photo'), (req, res, next) =>{
  const image_url = req.file.secure_url
  
 }
-```# cloudinary-example
+```
